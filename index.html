@@ -14,9 +14,7 @@
     <meta property="og:title" content="Amir online shop" />
     <meta
       property="og:description"
-      content="Amir Online Shop offers high-quality, stylish products at surprisingly low prices, so you can get premium goods without breaking the bank; we work directly with trusted suppliers to keep costs down, and every item is carefully selected for durability and design, plus we provide fast shipping and easy returns to make your shopping experience smooth and hassle‑free.
-
-"
+      content="Amir Online Shop offers high-quality, stylish products at surprisingly low prices, so you can get premium goods without breaking the bank; we work directly with trusted suppliers to keep costs down, and every item is carefully selected for durability and design, plus we provide fast shipping and easy returns to make your shopping experience smooth and hassle‑free."
     />
     <meta
       property="og:image"
@@ -31,16 +29,75 @@
       content="https://amir-syntax.github.io/Online-shope/"
     />
     <meta property="og:type" content="website" />
+
+    <style>
+      /* دسترس‌پذیری: متن فقط برای screen reader */
+      .sr-only {
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        clip: rect(0, 0, 0, 0) !important;
+        white-space: nowrap !important;
+        border: 0 !important;
+      }
+
+      /* لینک پرش به محتوای اصلی */
+      .skip-link {
+        position: absolute;
+        top: -60px;
+        left: 10px;
+        z-index: 9999;
+        padding: 10px 16px;
+        background: #111;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+      }
+
+      .skip-link:focus {
+        top: 10px;
+      }
+
+      /* بهبود کنتراست دکمه‌های گزارش‌شده */
+      .btn-light,
+      .btn-light-r,
+      .btn-light-slide,
+      .btn-light-ps,
+      .btn-long-p {
+        color: #111 !important;
+        background-color: #fff !important;
+      }
+
+      /* فوکوس واضح برای کاربران کیبورد */
+      a:focus-visible,
+      button:focus-visible,
+      input:focus-visible {
+        outline: 3px solid #005fcc;
+        outline-offset: 2px;
+      }
+    </style>
   </head>
+
   <body>
-    <script src="assets/js/main.js"></script>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
     <!-- start header -->
-    <section class="top">
-      <script src="assets/js/main.js"></script>
-      <nav class="main-menu animate__animated animate__fadeInLeft">
-        <img src="assets/images/Logo-org.png" alt="" class="logo" />
+    <header class="top">
+      <nav
+        class="main-menu animate__animated animate__fadeInLeft"
+        aria-label="Main navigation"
+      >
+        <img
+          src="assets/images/Logo-org.png"
+          alt="Amir Online Shop"
+          class="logo"
+        />
+
         <div class="search-box">
-          <label for="search"></label>
+          <label class="sr-only" for="search">Search</label>
           <input
             type="search"
             id="search"
@@ -50,12 +107,15 @@
         </div>
 
         <div class="wrap"></div>
+
         <ul class="u-main-menu">
           <li class="home-head">
-            <a href="#"><i class="fa fa-home"></i> Home</a>
+            <a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
           </li>
           <li class="shop-head">
-            <a href="#"><i class="fa fa-shopping-cart"></i> Shop</a>
+            <a href="#"
+              ><i class="fa fa-shopping-cart" aria-hidden="true"></i> Shop</a
+            >
             <ul class="mini-menu">
               <li>
                 <a href="#">Shop 2</a>
@@ -69,467 +129,634 @@
             </ul>
           </li>
           <li class="blog-head">
-            <a href="#blog"><i class="fa fa-newspaper-o"></i> Blog</a>
+            <a href="#blog"
+              ><i class="fa fa-newspaper-o" aria-hidden="true"></i> Blog</a
+            >
           </li>
           <li class="buy-head">
-            <a href="#"><i class="fa fa-money"></i> Buy</a>
+            <a href="#"><i class="fa fa-money" aria-hidden="true"></i> Buy</a>
           </li>
         </ul>
       </nav>
-    </section>
+    </header>
     <!-- end header -->
 
-    <!-- start slider -->
-    <section>
-      <div class="wrap">
-        <div class="row">
-          <div class="col-4">
-            <div class="slider-top">
-              <figure>
+    <main id="main">
+      <!-- start slider -->
+      <section>
+        <div class="wrap">
+          <div class="row">
+            <div class="col-4">
+              <div class="slider-top">
+                <figure>
+                  <img
+                    src="assets/images/slider.png"
+                    alt="Slider Image 1"
+                    class="animate__delay-1s animate__animated animate__flip"
+                  />
+                  <figcaption><h1>Amir online shop</h1></figcaption>
+                  <p>Welcome to our online shop!</p>
+                  <a href="#" class="btn-light btn-light-slide">
+                    Go to Shop
+                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                  </a>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end slider -->
+
+      <!-- start ads -->
+      <section>
+        <div class="wrap">
+          <div class="row">
+            <div class="col-lp">
+              <figure class="ads-image-1">
+                <img src="assets/images/baners/Laptop.png" alt="Shop Image 1" />
+                <figcaption>
+                  <h2>
+                    Latest Laptops<i class="fa fa-star" aria-hidden="true"></i>
+                  </h2>
+                </figcaption>
+                <a href="#" class="btn-light-r">
+                  Go to Shop
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+              </figure>
+            </div>
+
+            <div class="col-1 mg-15">
+              <figure class="ads-image-2">
                 <img
-                  src="assets/images/slider.png"
-                  alt="Slider Image 1"
-                  class="animate__delay-1s animate__animated animate__flip"
+                  src="assets/images/baners/clay-apple-watch-mockup-07.png"
+                  alt="Shop Image 2"
                 />
-                <figcaption><h1>Amir online shop</h1></figcaption>
-                <p>Welcome to our online shop!</p>
-                <a href="#" class="btn-light btn-light-slide"
-                  >Go to Shop <i class="fa fa-long-arrow-right"></i
-                ></a>
+                <figcaption></figcaption>
+                <a href="#" class="btn-yellow">Go to Shop</a>
+              </figure>
+            </div>
+
+            <div class="col-1 mg-15">
+              <figure class="ads-image-3">
+                <img
+                  src="assets/images/baners/Mask-Group-5-1.png"
+                  alt="Shop Image 3"
+                />
+                <figcaption></figcaption>
+                <a href="#" class="btn-light-r">Go to Shop</a>
+              </figure>
+            </div>
+
+            <div class="col-1">
+              <figure class="ads-image-6">
+                <img
+                  src="assets/images/baners/P6YUXW1.png"
+                  alt="Shop Image 4"
+                />
+                <a href="#" class="btn-light-r">Go to Shop</a>
+              </figure>
+            </div>
+
+            <div class="col-1">
+              <figure class="ads-image-4">
+                <img src="assets/images/baners/VR.png" alt="Shop Image 6" />
+                <figcaption></figcaption>
+                <a href="#" class="btn-light-r">Go to Shop</a>
+              </figure>
+            </div>
+
+            <div class="col-lp">
+              <figure class="ads-image-ps">
+                <img src="assets/images/baners/PS5.png" alt="Shop Image 5" />
+                <figcaption class="offer">
+                  <span>%OFF</span>
+                </figcaption>
+                <a href="#" class="btn-light btn-light-ps">
+                  Go to Shop
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+                <figcaption class="back-fig">Play station 5</figcaption>
               </figure>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- end slider -->
+      </section>
+      <!-- end ads -->
 
-    <!-- start ads -->
-    <section>
-      <div class="wrap">
-        <div class="row">
-          <div class="col-lp">
-            <figure class="ads-image-1">
-              <img src="assets/images/baners/Laptop.png" alt="Shop Image 1" />
-              <figcaption>
-                <h2>Latest Laptops<i class="fa fa-star"></i></h2>
-              </figcaption>
-              <a href="#" class="btn-light-r"
-                >Go to Shop <i class="fa fa-long-arrow-right"></i
-              ></a>
-            </figure>
+      <!-- start long head -->
+      <section class="long-head-sec">
+        <div class="warp">
+          <div class="row">
+            <div class="col-4">
+              <div class="long-head round-20 mg-15 bg-red">
+                <figure>
+                  <img
+                    src="assets/images/22.png"
+                    alt="long head image"
+                    class="hed-img"
+                  />
+                  <figcaption class="fig-left">
+                    <h2 class="texts-long">Our new headphone</h2>
+                    <a href="#" class="btn-yellow btn-long-y">
+                      Go to Shop
+                      <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </a>
+                  </figcaption>
+                  <figcaption class="fig-right">
+                    <h2>Test headphone</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laborum blanditiis eligendi ullam hic quas, ab quod nobis,
+                      loremque, voluptatibus eaque. Quisquam, voluptates.
+                      Quisquam, voluptates.
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
-          <div class="col-1 mg-15">
-            <figure class="ads-image-2">
+        </div>
+      </section>
+      <!-- end long head -->
+
+      <div class="clean"></div>
+      <br /><br /><br /><br />
+
+      <!-- start Product Showcase -->
+      <section>
+        <h2 class="sr-only">Product showcase</h2>
+        <div class="wrap">
+          <div class="row">
+            <div class="col-1">
+              <div class="product-item">
+                <figure class="product-item-1">
+                  <img
+                    class="round-20"
+                    src="assets/images/products/Group-1268-300x225.jpg"
+                    alt="Product Image 1"
+                  />
+                  <figcaption><span class="bg-red">OFF</span></figcaption>
+                  <h3>Product name</h3>
+                  <ul class="btn-item">
+                    <li>
+                      <a
+                        href="#"
+                        class="fa fa-search"
+                        aria-label="Search Product 1"
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="fa fa-heart"
+                        aria-label="Add Product 1 to favorites"
+                      ></a>
+                    </li>
+                  </ul>
+                  <span class="satr-sct" aria-label="3 out of 5 stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </span>
+                </figure>
+              </div>
+            </div>
+
+            <div class="col-1">
+              <div class="product-item">
+                <figure class="product-item-2">
+                  <img
+                    class="round-20"
+                    src="assets/images/products/Group-1269-300x225.jpg"
+                    alt="Product Image 2"
+                  />
+                  <figcaption></figcaption>
+                  <h3>Product name</h3>
+                  <ul class="btn-item">
+                    <li>
+                      <a
+                        href="#"
+                        class="fa fa-search"
+                        aria-label="Search Product 2"
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="fa fa-heart"
+                        aria-label="Add Product 2 to favorites"
+                      ></a>
+                    </li>
+                  </ul>
+                  <span class="satr-sct" aria-label="4 out of 5 stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </span>
+                </figure>
+              </div>
+            </div>
+
+            <div class="col-1">
+              <div class="product-item">
+                <figure class="product-item-3">
+                  <img
+                    class="round-20"
+                    src="assets/images/products/Group-1270-300x225.jpg"
+                    alt="Product Image 3"
+                  />
+                  <figcaption><span class="bg-red">OFF</span></figcaption>
+                  <h3>Product name</h3>
+                  <ul class="btn-item">
+                    <li>
+                      <a
+                        href="#"
+                        class="fa fa-search"
+                        aria-label="Search Product 3"
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="fa fa-heart"
+                        aria-label="Add Product 3 to favorites"
+                      ></a>
+                    </li>
+                  </ul>
+                  <span class="satr-sct" aria-label="1 out of 5 stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </span>
+                </figure>
+              </div>
+            </div>
+
+            <div class="col-1">
+              <div class="product-item">
+                <figure class="product-item-4">
+                  <img
+                    class="round-20"
+                    src="assets/images/products/Group-1271-300x225.jpg"
+                    alt="Product Image 4"
+                  />
+                  <figcaption></figcaption>
+                  <h3>Product name</h3>
+                  <ul class="btn-item">
+                    <li>
+                      <a
+                        href="#"
+                        class="fa fa-search"
+                        aria-label="Search Product 4"
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="fa fa-heart"
+                        aria-label="Add Product 4 to favorites"
+                      ></a>
+                    </li>
+                  </ul>
+                  <span class="satr-sct" aria-label="2 out of 5 stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </span>
+                </figure>
+              </div>
+            </div>
+
+            <div class="col-1">
+              <div class="product-item">
+                <figure class="product-item-5">
+                  <img
+                    class="round-20"
+                    src="assets/images/products/Group-1272-300x225.jpg"
+                    alt="Product Image 5"
+                  />
+                  <figcaption></figcaption>
+                  <h3>Product name</h3>
+                  <ul class="btn-item">
+                    <li>
+                      <a
+                        href="#"
+                        class="fa fa-search"
+                        aria-label="Search Product 5"
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="fa fa-heart"
+                        aria-label="Add Product 5 to favorites"
+                      ></a>
+                    </li>
+                  </ul>
+                  <span class="satr-sct" aria-label="4 out of 5 stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </span>
+                </figure>
+              </div>
+            </div>
+
+            <div class="col-1">
+              <div class="product-item">
+                <figure class="product-item-6">
+                  <img
+                    class="round-20"
+                    src="assets/images/products/Group-1273-300x225.jpg"
+                    alt="Product Image 6"
+                  />
+                  <figcaption><span class="bg-red">OFF</span></figcaption>
+                  <h3>Product name</h3>
+                  <ul class="btn-item">
+                    <li>
+                      <a
+                        href="#"
+                        class="fa fa-search"
+                        aria-label="Search Product 6"
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="fa fa-heart"
+                        aria-label="Add Product 6 to favorites"
+                      ></a>
+                    </li>
+                  </ul>
+                  <span class="satr-sct" aria-label="5 out of 5 stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </span>
+                </figure>
+              </div>
+            </div>
+
+            <div class="col-1">
+              <div class="product-item">
+                <figure class="product-item-7">
+                  <img
+                    class="round-20"
+                    src="assets/images/products/Group-1274-300x225.jpg"
+                    alt="Product Image 7"
+                  />
+                  <figcaption></figcaption>
+                  <h3>Product name</h3>
+                  <ul class="btn-item">
+                    <li>
+                      <a
+                        href="#"
+                        class="fa fa-search"
+                        aria-label="Search Product 7"
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="fa fa-heart"
+                        aria-label="Add Product 7 to favorites"
+                      ></a>
+                    </li>
+                  </ul>
+                  <span class="satr-sct" aria-label="4 out of 5 stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </span>
+                </figure>
+              </div>
+            </div>
+
+            <div class="col-1">
+              <div class="product-item">
+                <figure class="product-item-8">
+                  <img
+                    class="round-20"
+                    src="assets/images/products/Group-1275-300x225.jpg"
+                    alt="Product Image 8"
+                  />
+                  <figcaption><span class="bg-red">OFF</span></figcaption>
+                  <h3>Product name</h3>
+                  <ul class="btn-item">
+                    <li>
+                      <a
+                        href="#"
+                        class="fa fa-search"
+                        aria-label="Search Product 8"
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="fa fa-heart"
+                        aria-label="Add Product 8 to favorites"
+                      ></a>
+                    </li>
+                  </ul>
+                  <span class="satr-sct" aria-label="5 out of 5 stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </span>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end Product Showcase -->
+
+      <!-- start long head -->
+      <section>
+        <div class="warp">
+          <div class="row">
+            <div class="col-4">
+              <div class="long-head round-20 mg-15 bg-green">
+                <figure>
+                  <img
+                    src="assets/images/wtch.png"
+                    alt="long head image"
+                    class="apple-wth"
+                  />
+                  <figcaption class="fig-left">
+                    <h2 class="texts-long">Best apple watch</h2>
+                    <a href="#" class="btn-light-r btn-long-p">
+                      Go to Shop
+                      <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </a>
+                  </figcaption>
+                  <figcaption class="fig-right">
+                    <h2>Test watch</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laborum blanditiis eligendi ullam hic quas, ab quod nobis,
+                      loremque, voluptatibus eaque. Quisquam, voluptates.
+                      Quisquam, voluptates.
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br />
+      <!-- end long head -->
+
+      <!-- Start blog -->
+      <section class="blog" id="blog">
+        <h2 class="sr-only">Blog</h2>
+        <div class="wrap-vip">
+          <div class="row">
+            <div class="blog-1 col-blog">
               <img
-                src="assets/images/baners/clay-apple-watch-mockup-07.png"
-                alt="Shop Image 2"
+                class="round-20 mg-15"
+                src="assets/images/blog/blog-1.webp"
+                alt="Using headphones"
               />
-              <figcaption></figcaption>
-              <a href="#" class="btn-yellow">Go to Shop </a>
-            </figure>
-          </div>
-          <div class="col-1 mg-15">
-            <figure class="ads-image-3">
+              <h3>Using headphones</h3>
+              <div class="meta">
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <span>159 Comment</span>
+              </div>
+            </div>
+
+            <div class="blog-1 col-blog">
               <img
-                src="assets/images/baners/Mask-Group-5-1.png"
-                alt="Shop Image 3"
+                class="round-20 mg-15"
+                src="assets/images/blog/iphone.webp"
+                alt="High price iPhone"
               />
-              <figcaption></figcaption>
-              <a href="#" class="btn-light-r">Go to Shop </a>
-            </figure>
-          </div>
-          <div class="col-1">
-            <figure class="ads-image-6">
-              <img src="assets/images/baners/P6YUXW1.png" alt="Shop Image 4" />
-              <a href="#" class="btn-light-r">Go to Shop </a>
-            </figure>
-          </div>
+              <h3>High price!</h3>
+              <div class="meta">
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <span>26 Comment</span>
+              </div>
+            </div>
 
-          <div class="col-1">
-            <figure class="ads-image-4">
-              <img src="assets/images/baners/VR.png" alt="Shop Image 6" />
-              <figcaption></figcaption>
-              <a href="#" class="btn-light-r">Go to Shop </a>
-            </figure>
-          </div>
-          <div class="col-lp">
-            <figure class="ads-image-ps">
-              <img src="assets/images/baners/PS5.png" alt="Shop Image 5" />
-              <figcaption class="offer">
-                <span>%OFF</span>
-              </figcaption>
-              <a href="#" class="btn-light btn-light-ps"
-                >Go to Shop <i class="fa fa-long-arrow-right"></i>
-              </a>
-              <figcaption class="back-fig">Play station 5</figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end ads -->
+            <div class="blog-1 col-blog">
+              <img
+                class="round-20 mg-15"
+                src="assets/images/blog/Coffee maker.webp"
+                alt="Coffee maker"
+              />
+              <h3>Benefits of Coffee</h3>
+              <div class="meta">
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <span>10 Comment</span>
+              </div>
+            </div>
 
-    <!-- start long head -->
-    <section class="long-head-sec">
-      <div class="warp">
-        <div class="row">
-          <div class="col-4">
-            <div class="long-head round-20 mg-15 bg-red">
-              <figure>
-                <img
-                  src="assets/images/22.png"
-                  alt="long head image"
-                  class="hed-img"
-                />
-                <figcaption class="fig-left">
-                  <h2 class="texts-long">Our new headphone</h2>
-                  <a href="#" class="btn-yellow btn-long-y"
-                    >Go to Shop <i class="fa fa-long-arrow-right"></i
-                  ></a>
-                </figcaption>
-                <figcaption class="fig-right">
-                  <h2>Test headphone</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laborum blanditiis eligendi ullam hic quas, ab quod nobis,
-                    loremque, voluptatibus eaque. Quisquam, voluptates.
-                    Quisquam, voluptates.
-                  </p>
-                </figcaption>
-              </figure>
+            <div class="blog-1 col-blog">
+              <img
+                class="round-20 mg-15"
+                src="assets/images/blog/Keyboard.webp"
+                alt="Keyboard"
+              />
+              <h3>Keyboard sound</h3>
+              <div class="meta">
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <span>570 Comment</span>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- end long head -->
-    <div class="clean"></div>
-    <br /><br /><br /><br />
-    <!-- start Product Showcase -->
-    <section>
-      <div class="wrap">
-        <div class="row">
-          <div class="col-1">
-            <div class="product-item">
-              <figure class="product-item-1">
-                <img
-                  class="round-20"
-                  src="assets/images/products/Group-1268-300x225.jpg"
-                  alt="Product Image 1"
-                />
-                <figcaption><span class="bg-red">OFF</span></figcaption>
-                <h4>Product name</h4>
-                <ul class="btn-item">
-                  <li><a href="" class="fa fa-search"></a></li>
-                  <li><a href="" class="fa fa-heart"></a></li>
-                </ul>
-                <span class="satr-sct">
-                  <i class="fa fa-star"></i><i class="fa fa-star"></i
-                  ><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i
-                  ><i class="fa fa-star-o"></i>
-                </span>
-              </figure>
+            <div class="blog-1 col-blog">
+              <img
+                class="round-20 mg-15"
+                src="assets/images/blog/Laptop.webp"
+                alt="Apple laptop"
+              />
+              <h3>Apple laptop</h3>
+              <div class="meta">
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <span>1026 Comment</span>
+              </div>
             </div>
-          </div>
-          <div class="col-1">
-            <div class="product-item">
-              <figure class="product-item-2">
-                <img
-                  class="round-20"
-                  src="assets/images/products/Group-1269-300x225.jpg"
-                  alt="Product Image 1"
-                />
-                <figcaption></figcaption>
-                <h4>Product name</h4>
-                <ul class="btn-item">
-                  <li><a href="" class="fa fa-search"></a></li>
-                  <li><a href="" class="fa fa-heart"></a></li>
-                </ul>
-                <span class="satr-sct">
-                  <i class="fa fa-star"></i><i class="fa fa-star"></i
-                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
-                  ><i class="fa fa-star-o"></i>
-                </span>
-              </figure>
-            </div>
-          </div>
-          <div class="col-1">
-            <div class="product-item">
-              <figure class="product-item-3">
-                <img
-                  class="round-20"
-                  src="assets/images/products/Group-1270-300x225.jpg"
-                  alt="Product Image 1"
-                />
-                <figcaption><span class="bg-red">OFF</span></figcaption>
-                <h4>Product name</h4>
-                <ul class="btn-item">
-                  <li><a href="" class="fa fa-search"></a></li>
-                  <li><a href="" class="fa fa-heart"></a></li>
-                </ul>
-                <span class="satr-sct">
-                  <i class="fa fa-star"></i><i class="fa fa-star-o"></i
-                  ><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i
-                  ><i class="fa fa-star-o"></i>
-                </span>
-              </figure>
-            </div>
-          </div>
-          <div class="col-1">
-            <div class="product-item">
-              <figure class="product-item-4">
-                <img
-                  class="round-20"
-                  src="assets/images/products/Group-1271-300x225.jpg"
-                  alt="Product Image 1"
-                />
-                <figcaption></figcaption>
-                <h4>Product name</h4>
-                <ul class="btn-item">
-                  <li><a href="" class="fa fa-search"></a></li>
-                  <li><a href="" class="fa fa-heart"></a></li>
-                </ul>
-                <span class="satr-sct">
-                  <i class="fa fa-star"></i><i class="fa fa-star"></i
-                  ><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i
-                  ><i class="fa fa-star-o"></i>
-                </span>
-              </figure>
-            </div>
-          </div>
-          <div class="col-1">
-            <div class="product-item">
-              <figure class="product-item-5">
-                <img
-                  class="round-20"
-                  src="assets/images/products/Group-1272-300x225.jpg"
-                  alt="Product Image 1"
-                />
-                <figcaption></figcaption>
-                <h4>Product name</h4>
-                <ul class="btn-item">
-                  <li><a href="" class="fa fa-search"></a></li>
-                  <li><a href="" class="fa fa-heart"></a></li>
-                </ul>
-                <span class="satr-sct">
-                  <i class="fa fa-star"></i><i class="fa fa-star"></i
-                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
-                  ><i class="fa fa-star-o"></i>
-                </span>
-              </figure>
-            </div>
-          </div>
-          <div class="col-1">
-            <div class="product-item">
-              <figure class="product-item-6">
-                <img
-                  class="round-20"
-                  src="assets/images/products/Group-1273-300x225.jpg"
-                  alt="Product Image 1"
-                />
-                <figcaption><span class="bg-red">OFF</span></figcaption>
-                <h4>Product name</h4>
-                <ul class="btn-item">
-                  <li><a href="" class="fa fa-search"></a></li>
-                  <li><a href="" class="fa fa-heart"></a></li>
-                </ul>
-                <span class="satr-sct">
-                  <i class="fa fa-star"></i><i class="fa fa-star"></i
-                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
-                  ><i class="fa fa-star"></i>
-                </span>
-              </figure>
-            </div>
-          </div>
-          <div class="col-1">
-            <div class="product-item">
-              <figure class="product-item-7">
-                <img
-                  class="round-20"
-                  src="assets/images/products/Group-1274-300x225.jpg"
-                  alt="Product Image 1"
-                />
-                <figcaption></figcaption>
-                <h4>Product name</h4>
-                <ul class="btn-item">
-                  <li><a href="" class="fa fa-search"></a></li>
-                  <li><a href="" class="fa fa-heart"></a></li>
-                </ul>
-                <span class="satr-sct">
-                  <i class="fa fa-star"></i><i class="fa fa-star"></i
-                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
-                  ><i class="fa fa-star-o"></i>
-                </span>
-              </figure>
-            </div>
-          </div>
-          <div class="col-1">
-            <div class="product-item">
-              <figure class="product-item-8">
-                <img
-                  class="round-20"
-                  src="assets/images/products/Group-1275-300x225.jpg"
-                  alt="Product Image 1"
-                />
-                <figcaption><span class="bg-red">OFF</span></figcaption>
-                <h4>Product name</h4>
-                <ul class="btn-item">
-                  <li><a href="" class="fa fa-search"></a></li>
-                  <li><a href="" class="fa fa-heart"></a></li>
-                </ul>
-                <span class="satr-sct">
-                  <i class="fa fa-star"></i><i class="fa fa-star"></i
-                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
-                  ><i class="fa fa-star"></i>
-                </span>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end Product Showcase -->
-    <!-- start long head -->
-    <section>
-      <div class="warp">
-        <div class="row">
-          <div class="col-4">
-            <div class="long-head round-20 mg-15 bg-green">
-              <figure>
-                <img
-                  src="assets/images/wtch.png"
-                  alt="long head image"
-                  class="apple-wth"
-                />
-                <figcaption class="fig-left">
-                  <h2 class="texts-long">Best apple watch</h2>
-                  <a href="#" class="btn-light-r btn-long-p"
-                    >Go to Shop <i class="fa fa-long-arrow-right"></i
-                  ></a>
-                </figcaption>
-                <figcaption class="fig-right">
-                  <h2>Test watch</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laborum blanditiis eligendi ullam hic quas, ab quod nobis,
-                    loremque, voluptatibus eaque. Quisquam, voluptates.
-                    Quisquam, voluptates.
-                  </p>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <br />
-    <!-- end long head -->
-    <!-- Start blog-->
-    <section class="blog" id="blog">
-      <div class="wrap-vip">
-        <div class="row">
-          <div class="blog-1 col-blog">
-            <img
-              class="round-20 mg-15"
-              src="assets/images/blog/blog-1.webp"
-              alt=""
-            />
-            <h3>Using headphones</h3>
-            <div class="meta">
-              <i class="fa fa-comment-o"></i><span> 159 Comment</span>
-            </div>
-          </div>
-          <div class="blog-1 col-blog">
-            <img
-              class="round-20 mg-15"
-              src="assets/images/blog/iphone.webp"
-              alt=""
-            />
-            <h3>High price!</h3>
-            <div class="meta">
-              <i class="fa fa-comment-o"></i><span> 26 Comment</span>
-            </div>
-          </div>
-          <div class="blog-1 col-blog">
-            <img
-              class="round-20 mg-15"
-              src="assets/images/blog/Coffee maker.webp"
-              alt=""
-            />
-            <h3>Benefits of Coffee</h3>
-            <div class="meta">
-              <i class="fa fa-comment-o"></i><span> 10 Comment</span>
-            </div>
-          </div>
-          <div class="blog-1 col-blog">
-            <img
-              class="round-20 mg-15"
-              src="assets/images/blog/Keyboard.webp"
-              alt=""
-            />
-            <h3>Keyboard sound</h3>
-            <div class="meta">
-              <i class="fa fa-comment-o"></i><span> 570 Comment</span>
-            </div>
-          </div>
-          <div class="blog-1 col-blog">
-            <img
-              class="round-20 mg-15"
-              src="assets/images/blog/Laptop.webp"
-              alt=""
-            />
-            <h3>Apple laptop</h3>
-            <div class="meta">
-              <i class="fa fa-comment-o"></i><span> 1026 Comment</span>
-            </div>
-          </div>
-          <div class="blog-1 col-blog">
-            <img
-              class="round-20 mg-15"
-              src="assets/images/blog/motherboard.webp"
-              alt=""
-            />
-            <h3>Motherboard or city?</h3>
-            <div class="meta">
-              <i class="fa fa-comment-o"></i><span> 798 Comment</span>
-            </div>
-          </div>
-          <div class="blog-1 col-blog">
-            <img
-              class="round-20 mg-15"
-              src="assets/images/blog/Mouse.webp"
-              alt=""
-            />
-            <h3>Gaming Mouse</h3>
-            <div class="meta">
-              <i class="fa fa-comment-o"></i><span> 999 Comment</span>
-            </div>
-          </div>
-          <div class="blog-1 col-blog">
-            <img
-              class="round-20 mg-15"
-              src="assets/images/blog/Security.webp"
-              alt=""
-            />
-            <h3>Is the camera secure?</h3>
-            <div class="meta">
-              <i class="fa fa-comment-o"></i><span> 626 Comment</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="slider-btn prev">
-        <i class="fa fa-chevron-left"></i>
-      </button>
 
-      <button class="slider-btn next">
-        <i class="fa fa-chevron-right"></i>
-      </button>
-    </section>
-    <!-- end blog-->
-    <!-- Start footer-->
+            <div class="blog-1 col-blog">
+              <img
+                class="round-20 mg-15"
+                src="assets/images/blog/motherboard.webp"
+                alt="Motherboard"
+              />
+              <h3>Motherboard or city?</h3>
+              <div class="meta">
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <span>798 Comment</span>
+              </div>
+            </div>
+
+            <div class="blog-1 col-blog">
+              <img
+                class="round-20 mg-15"
+                src="assets/images/blog/Mouse.webp"
+                alt="Gaming mouse"
+              />
+              <h3>Gaming Mouse</h3>
+              <div class="meta">
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <span>999 Comment</span>
+              </div>
+            </div>
+
+            <div class="blog-1 col-blog">
+              <img
+                class="round-20 mg-15"
+                src="assets/images/blog/Security.webp"
+                alt="Security camera"
+              />
+              <h3>Is the camera secure?</h3>
+              <div class="meta">
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <span>626 Comment</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="slider-btn prev"
+          type="button"
+          aria-label="Previous blog posts"
+        >
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </button>
+
+        <button
+          class="slider-btn next"
+          type="button"
+          aria-label="Next blog posts"
+        >
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </button>
+      </section>
+      <!-- end blog -->
+    </main>
+
+    <!-- Start footer -->
     <footer class="footer">
       <div class="wrap">
         <div class="row">
@@ -543,20 +770,20 @@
               </p>
 
               <div class="socials">
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
+                <a href="#" aria-label="Facebook">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
                 </a>
 
-                <a href="#">
-                  <i class="fa fa-instagram"></i>
+                <a href="#" aria-label="Instagram">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
 
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
+                <a href="#" aria-label="Twitter">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
 
-                <a href="#">
-                  <i class="fa fa-youtube-play"></i>
+                <a href="#" aria-label="YouTube">
+                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
@@ -575,7 +802,7 @@
 
               <a href="#">FAQ</a>
               <a href="#">Privacy Policy</a>
-              <a href="#">Terms & Conditions</a>
+              <a href="#">Terms &amp; Conditions</a>
               <a href="#">Support</a>
             </div>
 
@@ -585,9 +812,15 @@
               <p>Subscribe to receive our latest news and special offers.</p>
 
               <form class="footer-form">
-                <input type="email" placeholder="Your Email" />
+                <label class="sr-only" for="newsletter-email">Your Email</label>
+                <input
+                  type="email"
+                  id="newsletter-email"
+                  name="email"
+                  placeholder="Your Email"
+                />
 
-                <button>Subscribe</button>
+                <button type="submit">Subscribe</button>
               </form>
             </div>
           </div>
@@ -596,5 +829,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="assets/js/main.js" defer></script>
   </body>
 </html>
